@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px 15px 15px;
+  background-color: white;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 15px;
+}
+
+.menu-section-left {
+  margin-right: auto;
+}
+
+.bell-wrapper {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 50%;
+  color: var(--ailos-primary-color);
+}
+
+.bell-wrapper:hover {
+  background-color: var(--ailos-grey-1);
+  cursor: pointer;
+}
+
+.bell-icon {
+  font-size: 24px;
+}
+
+.button-coop {
+  background-color: white;
+  color: var(--ailos-primary-color);
+  border: 1px solid var(--ailos-primary-color);
+  padding: 5px 15px 5px 15px;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Open Sans";
+}
+
+.button-coop:hover {
+  background-color: var(--ailos-grey-1);
+  cursor: pointer;
+}
+
+.profile-wrapper {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 50%;
+  color: var(--ailos-primary-color);
+}
+
+.profile-wrapper:hover {
+  background-color: var(--ailos-grey-1);
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 24px;
+}

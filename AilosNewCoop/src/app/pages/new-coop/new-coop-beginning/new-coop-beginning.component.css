@@ -1,0 +1,38 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.cpf-area {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.page-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 15px 0px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px 15px 0px;
+}
+
+.input-wrapper {
+  margin-right: 15px;
+}
+
+.cpf-button {
+  margin-top: 18px;
+}
+
+.data-area {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 15px 0px 15px;
+}

@@ -1,0 +1,46 @@
+.sidebar {
+  left: 0; 
+  top: 0; 
+  height: 100%; 
+  width: 85px; 
+  background: var(--ailos-primary-color);
+  font: open sans bold;
+}
+
+.logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 85px;
+  height: 85px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 55px;
+}
+
+.menu-item:hover {
+  background: var(--ailos-blue-120);
+  cursor: pointer;
+}
+
+.menu-logo {
+  height: 25px;
+}
+
+.menu-logo-burger {
+  height: 20px;
+}
+
+.menu-item-burger {
+  height: 70px;
+  color: var(--ailos-blue-60);
+}

@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --ailos-primary-color: rgb(22, 92, 125);
+  --ailos-secundary-color: rgb(255, 163, 0);
+  --ailos-light-blue: rgb(0, 158, 208);
+  --ailos-medium-blue: rgb(0, 125, 138);
+  --ailos-green: rgb(0, 194, 70);
+  --ailos-critical-red: rgb(193, 48, 24);
+  --ailos-blue-120: rgb(1, 63, 92);
+  --ailos-blue-60: rgb(115, 157, 177);
+  --ailos-background: rgb(232, 239, 242);
+  --ailos-grey-1: rgb(231, 238, 241);
+  --ailos-grey-2: rgb(198, 206, 209);
+  --ailos-grey-3: rgb(167, 176, 181);
+  --ailos-grey-4: rgb(136, 148, 153);
+  --ailos-black: rgb(4, 15, 20);
+}
+
+body {
+  margin: 0px;
+  background: rgb(232, 239, 242);
+  font-family: "Open Sans";
+}
+
+.page-title {
+  font-family: "Exo 2";
+  font-size: 24px;
+  font-weight: 600;
+  color: #040f14;
+  margin-bottom: 5px;
+}
+
+.breadcrumb {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  color: #889499;
+}
+
+.label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.panel-title {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.sutle-text {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ailos-grey-4);
+}
+
+button.primary {
+  background-color: var(--ailos-primary-color);
+  border-radius: 2px;
+  height: 48px;
+  color: white;
+  padding : 0px 16px 0px 16px;
+  border: 1px solid var(--ailos-primary-color);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button.primary.small {
+  height: 32px;
+}
+
+button.primary:hover {
+  background-color: var(--ailos-blue-120);
+  cursor: pointer;
+}
+
+button.primary:disabled {
+  background-color: var(--ailos-grey-3);
+  border: solid var(--ailos-grey-3);
+  cursor: initial;
+}
+
+button.secundary {
+  background-color: white;
+  border-radius: 2px;
+  height: 48px;
+  color: var(--ailos-primary-color);
+  padding : 0px 16px 0px 16px;
+  border-width: 1px;
+  border-color: var(--ailos-primary-color);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button.secundary.small {
+  height: 32px;
+}
+
+button.secundary:hover {
+  background-color: var(--ailos-grey-1);
+  cursor: pointer;
+}
+
+input {
+  border-radius: 2px;
+  padding : 6px 16px 6px 16px;
+  border: 1px solid var(--ailos-grey-4);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid var(--ailos-grey-2);
+  border-radius: 1px;
+  padding: 15px;
+  margin: 0px 15px 15px 0px;
+}
