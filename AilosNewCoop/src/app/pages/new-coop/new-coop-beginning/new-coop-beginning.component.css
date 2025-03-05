@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
-  overflow-y: auto;
+  margin-bottom: 100px;
 }
 
 .cpf-area {
@@ -35,4 +35,27 @@
   display: flex;
   flex-direction: row;
   margin: 0px 15px 0px 15px;
+}
+
+.card-data-row {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px 0px 0px;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.card-data-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ailos-grey-4);
+}
+
+.card-data-link {
+  margin-top: 7px;
 }

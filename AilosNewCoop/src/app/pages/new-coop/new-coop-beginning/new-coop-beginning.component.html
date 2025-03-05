@@ -15,22 +15,99 @@
         <div class="label">
           CPF
         </div>
-        <input placeholder="000.000.000-00" />
+        <input placeholder="000.000.000-00" [(ngModel)]="cpfValue" (keyup)="changeCPF()" maxlength="11"/>
       </div>
       <div class="cpf-button">
-        <button class="primary small"> consultar por CPF</button>
+        <button class="primary small" [disabled]="!validCPF" (click)="getCoopData()">Consultar por CPF</button>
       </div>
     </div>
   </div>
-  <div class="data-area">
+  <div class="data-area" *ngIf="coopData">
     <div class="card">
-      situação cadastral do cpf
+      <div class="label">
+        Situação cadastral do CPF
+      </div>
+      <div class="sutle-text">
+        Consulta na Receita Federal
+      </div>
+      <div class="card-data-row">
+        <div class="card-data-icon">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+        <div class="card-data">
+          <div class="sutle-text">
+            Nome
+          </div>
+          <div class="default-text">
+            {{ coopData.nome }}
+          </div>
+        </div>
+      </div>
+      <div class="card-data-row">
+        <div class="card-data-icon">
+          <span class="material-symbols-outlined">check_circle</span>
+        </div>
+        <div class="card-data">
+          <div class="sutle-text">
+            Situação do CPF
+          </div>
+          <div class="default-text">
+            {{ coopData.situacao }}
+          </div>
+        </div>
+      </div>
     </div>
     <div class="card">
-      conta aplicação
+      <div class="label">
+        Conta aplicação
+      </div>
+      <div class="sutle-text">
+        Cooperativa {{ coopData.coopContaAplicacao }}
+      </div>
+      <div class="card-data-row">
+        <div class="card-data-icon">
+          <span class="material-symbols-outlined">credit_card</span>
+        </div>
+        <div class="card-data">
+          <div class="sutle-text">
+            Numero da conta
+          </div>
+          <div class="default-text">
+            {{ coopData.numeroContaAplicacao }}
+          </div>
+        </div>
+      </div>
+      <div class="card-data-row">
+        <div class="card-data-link">
+          <a href="#">Duplica conta</a>
+        </div>
+      </div>
     </div>
     <div class="card">
-      conta corrente
+      <div class="label">
+        Conta corrente
+      </div>
+      <div class="sutle-text">
+        Cooperativa {{ coopData.coopContaCorrente }}
+      </div>
+      <div class="card-data-row">
+        <div class="card-data-icon">
+          <span class="material-symbols-outlined">credit_card</span>
+        </div>
+        <div class="card-data">
+          <div class="sutle-text">
+            Numero da conta
+          </div>
+          <div class="default-text">
+            {{ coopData.numeroContaCorrente }}
+          </div>
+        </div>
+      </div>
+      <div class="card-data-row">
+        <div class="card-data-link">
+          <a href="#">Duplica conta</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

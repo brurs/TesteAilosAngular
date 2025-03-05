@@ -3,9 +3,13 @@
     <stepper></stepper>
   </div>
   <div>
-    <new-coop-beginning></new-coop-beginning>
+    <new-coop-beginning [cpfFount]="cpfFount"></new-coop-beginning>
   </div>
-  <div class="footer">
-    <button class="secundary">Dicas para abertura da conta</button>
+  <div class="footer" *ngIf="!coopFound">
+    <button class="secundary footer-button">Dicas para abertura da conta</button>
+  </div>
+  <div class="footer" *ngIf="coopFound">
+    <button class="primary footer-button">Iniciar nova admissão</button>
+    <button class="secundary footer-button">Dicas para admissão</button>
   </div>
 </div>

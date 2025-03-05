@@ -14,12 +14,16 @@
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: start;
   position: fixed;
   width: 100%;
   bottom: 0px;
   background-color: white;
   padding: 15px;
+}
+
+.footer-button {
+  margin-right: 15px;
 }
